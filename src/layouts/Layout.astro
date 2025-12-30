@@ -1,4 +1,7 @@
 ---
+/* Import global styles the Astro way */
+import "../styles/globals.css";
+
 const {
   title = "Integria Digital | Software Consulting",
   description = "Software consulting for efficient, transparent business workflows.",
@@ -17,9 +20,9 @@ const {
     <link rel="canonical" href={canonical} />
 
     <meta name="robots" content="index, follow" />
-
   </head>
-  <body class="antialiased text-slate-900 bg-white">
+
+  <body class="antialiased bg-background text-foreground">
     <slot />
   </body>
 </html>
