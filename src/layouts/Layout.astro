@@ -1,5 +1,4 @@
 ---
-/* Import global styles the Astro way */
 import "../styles/globals.css";
 
 const {
@@ -22,7 +21,8 @@ const {
     <meta name="robots" content="index, follow" />
   </head>
 
-  <body class="antialiased bg-background text-foreground">
+  <!-- IMPORTANT: no background classes here -->
+  <body class="antialiased text-foreground">
     <slot />
   </body>
 </html>
